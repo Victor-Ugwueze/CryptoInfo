@@ -3,4 +3,6 @@
     <string name="home_text">Cryto info</string>
     <string name="btn_checkout">Checkout</string>
     <string name="btn_create_card">Create Card</string>
+    <string name="coin_btc_name">BTC</string>
+    <string name="coin_eth_name">ETH</string>
 </resources>

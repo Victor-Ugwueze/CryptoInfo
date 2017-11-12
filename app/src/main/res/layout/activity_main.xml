@@ -20,9 +20,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bitcoin_image"
+        android:layout_marginTop="50dp"
         android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="93dp" />
+        android:layout_centerHorizontal="true" />
     <Button android:id="@+id/create_card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,4 +35,30 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="180dp" />
+
+        <RadioGroup android:id="@+id/radio_group_select"
+            android:layout_above="@id/create_card"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <RadioButton android:id="@+id/btc_radio_select"
+                android:layout_width="wrap_content"
+                android:text="@string/coin_btc_name"
+                android:buttonTint="#fff"
+                android:layout_marginRight="8dp"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+
+            <RadioButton android:id="@+id/eth_radio_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:buttonTint="#fff"
+                android:text="@string/coin_eth_name"/>
+        </RadioGroup>
+
 </RelativeLayout>

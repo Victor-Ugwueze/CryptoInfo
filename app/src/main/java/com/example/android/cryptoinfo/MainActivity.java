@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 
@@ -23,7 +24,15 @@ public class MainActivity extends AppCompatActivity {
         checkOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                RadioButton create_btc = (RadioButton)findViewById(R.id.btc_radio_select);
+
                 Intent createCardIntent = new Intent(MainActivity.this,CreateCardActivity.class);
+                if(create_btc.isChecked()){
+                    createCardIntent.putExtra("btc_true","true");
+                }else {
+                    createCardIntent.putExtra("btc_true","false");
+                }
+
                 startActivity(createCardIntent);
             }
         });
